@@ -10,7 +10,10 @@ activityCompose = "1.11.0"
 composeBom = "2024.09.00"
 room = "2.6.1"
 navigationCompose = "2.8.0"
-ksp = "2.0.21-1.0.27" 
+ksp = "2.0.21-1.0.27"
+mockito = "5.11.0"
+mockitoKotlin = "5.2.1"
+coroutinesTest = "1.7.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,6 +38,11 @@ androidx-room-compiler = { group = "androidx.room", name = "room-compiler", vers
 
 # Navigation
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+
+# Testing
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoKotlin" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTest" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
